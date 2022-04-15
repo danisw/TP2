@@ -3,13 +3,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("tes");
+        System.out.println("*** Belajar Deret Aritmatika, Deret Geometri dan Menghitung Faktorial ***");
         setVariable();
     }
     public static <Int> void setVariable(){
         /* Block inputan */
         Scanner input = new Scanner(System.in);  //membuat object scanner baru
-        System.out.println("Masukan panjang bilangan [2-10]:");
+        System.out.println("\n Masukan panjang bilangan [2-10]:");
         int panjangBil = input.nextInt();
         if(panjangBil < 2 || panjangBil > 10) //melakukan cek apakah panjang bilangan antara 2-10
             throw new RuntimeException("Range bilangan harus diatanta 2-10"); //jika tidak maka ditampilkan pesan error
