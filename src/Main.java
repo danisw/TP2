@@ -37,9 +37,9 @@ public class Main {
 
         for ( i=1; i<=n; i++) {
             if(i == 1){
-                un=1;
+                un=1; // set suku pertama
             }else{
-                 un = a + (i-1)*b;
+                 un = a + (i-1)*b; //rumus deret aritmatika
             }
             aritmatika.add(un);
         }
@@ -53,9 +53,9 @@ public class Main {
         int i;
         for ( i=1; i<=n; i++) {
             if(i == 1){
-                un=1;
+                un=1; // set suku pertama
             }else{
-                un = un*b;
+                un = un*b; //rumus deret geometri
             }
             geometri.add(un);
         }
@@ -71,11 +71,11 @@ public class Main {
 
         for ( i=n; i>=a; i--) {
             if(i == n){
-                un = n;
-                sum = un;
+                un = n; //set suku pertama
+                sum = un; //set jumlah awal
             }else{
-                un = un-1;
-                sum = sum*un;
+                un = un-1; //rumus faktorial
+                sum = sum*un; //menampung jumlah faktorial
             }
             faktorial.add(un);
         }
